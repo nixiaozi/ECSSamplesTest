@@ -124,14 +124,14 @@ public class TestSystem_ForEach : SystemBase
 
     protected override void OnDestroy()
     {
-        // result2.Dispose();  在Onupdate方法内使用的变量需要在每次执行完成方法的内部Dispose（）,或者使用局部变量方法完成后自动销毁
+        // result2.Dispose();  在Onupdate方法内使用的变量需要在每次执行完成方法的内部Dispose（）,
         // result2C3.Dispose();
 /*        m_Query_2.Dispose();
         m_Query_1.Dispose();  // 这个好像也不需要在最后Dispose()
         m_Query_0.Dispose();*/
 
-        // m_Query_1.Dispose(); // The EntityQuery will automatically be disposed by the ComponentSystem.
-        // m_Query_0.Dispose(); // 原因同上
+        //m_Query_1.Dispose(); // The EntityQuery will automatically be disposed by the ComponentSystem.
+        //m_Query_0.Dispose(); // 原因同上
 
 /*        entities5.Dispose();
         entities6.Dispose();  // 出现错误 The NativeArray has been deallocated, it is not allowed to access it
