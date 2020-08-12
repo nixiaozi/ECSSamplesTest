@@ -8,6 +8,7 @@ using Unity.Transforms;
 // This system updates all entities in the scene with both a RotationSpeed_ForEach and Rotation component.
 
 // ReSharper disable once InconsistentNaming
+[UpdateBefore(typeof(TestSystem_ForEach))]
 public class RotationSpeedSystem_ForEach : SystemBase
 {
     NativeArray<Entity> entityArray = new NativeArray<Entity>(11, Allocator.TempJob);
