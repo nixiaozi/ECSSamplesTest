@@ -3,7 +3,7 @@ using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
 
-
+// [UpdateInGroup(typeof(MyComponentSystemGroup))] 
 public class TestSystem_ForEach : SystemBase
 {
     /*private NativeArray<Entity> result2;
@@ -70,7 +70,7 @@ public class TestSystem_ForEach : SystemBase
 
     protected override void OnUpdate()
     {
-
+        Debug.Log("Test可以先执行么");
 
         // 第一种获取 EntityQuery 的方法。
         m_Query_0 = GetEntityQuery(typeof(EntityAge_ForEach),

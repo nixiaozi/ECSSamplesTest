@@ -70,6 +70,9 @@
     <Compile Include="Assets\HelloCube\1. ForEach\RotationSpeedSystem_ForEach.cs" />
     <Compile Include="Assets\HelloCube\1. ForEach\RotationSpeed_ForEach.cs" />
     <Compile Include="Assets\HelloCube\1. ForEach\TestSystem_ForEach.cs" />
+    <Compile Include="Assets\HelloCube\1. ForEach\WorldTest\CustomBootup.cs" />
+    <Compile Include="Assets\HelloCube\1. ForEach\WorldTest\MyComponentSystemGroup.cs" />
+    <Compile Include="Assets\HelloCube\1. ForEach\WorldTest\WorldTest_ForEach.cs" />
     <Compile Include="Assets\HelloCube\2. IJobChunk\RotationSpeedAuthoring_IJobChunk.cs" />
     <Compile Include="Assets\HelloCube\2. IJobChunk\RotationSpeedSystem_IJobChunk.cs" />
     <Compile Include="Assets\HelloCube\2. IJobChunk\RotationSpeed_IJobChunk.cs" />
