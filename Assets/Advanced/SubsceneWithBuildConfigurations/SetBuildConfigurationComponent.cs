@@ -60,8 +60,8 @@ public class SetBuildConfigurationComponent : MonoBehaviour
         DefaultWorldInitialization.Initialize(worldNameA, !Application.isPlaying);
         DefaultWorldInitialization.Initialize(worldNameB, !Application.isPlaying);
 
-        worldA = World.AllWorlds.First(w => w.Name == worldNameA);
-        worldB = World.AllWorlds.First(w => w.Name == worldNameB);
+        worldA = World.All.First(w => w.Name == worldNameA);  //  AllWorld --> All 
+        worldB = World.All.First(w => w.Name == worldNameB);
 
         OnValidate();
                 

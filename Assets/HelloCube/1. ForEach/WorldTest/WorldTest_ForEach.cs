@@ -10,12 +10,12 @@ public class WorldTest_ForEach : SystemBase
 
     protected override void OnCreate()
     {
-        // 这个是手动添加System到当前World的方法（默认是Default World）
+        /*// 这个是手动添加System到当前World的方法（默认是Default World）
         World.GetOrCreateSystem(typeof(TestSystem_ForEach)); // 这个是如果存在就直接获取，如果不存在就创建
         World.CreateSystem(typeof(TestSystem_ForEach)); //重复创建System会怎样？ 重复创建导致该system的OnCreate()方法重复执行
         World.AddSystem<TestSystem_ForEach>(new TestSystem_ForEach()); // 也是天价system到world的方法，效果同CreateSystem
         World.AddSystem<TestSystem_ForEach>(new TestSystem_ForEach()); // 重复执行相同方法会有什么问题？ 会重新执行以下OnCreate方法
-
+*/
 
         /*
         ComponentSystemGroup componentSystemGroup = new ComponentSystemGroup; // ComponentSystemGroup 是抽象类，无法直接实例化

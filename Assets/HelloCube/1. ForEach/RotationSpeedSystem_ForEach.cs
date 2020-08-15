@@ -61,7 +61,7 @@ public class RotationSpeedSystem_ForEach : SystemBase
     }
 
 
-    protected override void OnDestroyManager()
+    protected override void OnDestroy()   //  原来的OnDestroyManager 已经移除
     {
         entityArray.Dispose();
     }

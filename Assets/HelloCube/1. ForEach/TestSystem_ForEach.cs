@@ -71,7 +71,7 @@ public class TestSystem_ForEach : SystemBase
     protected override void OnUpdate()
     {
         Debug.Log("Test可以先执行么");
-
+/*
         // 第一种获取 EntityQuery 的方法。
         m_Query_0 = GetEntityQuery(typeof(EntityAge_ForEach),
                             ComponentType.ReadOnly<EntityCount_ForEach>());    // 这个是定义了一个 EntityQuery 查询
@@ -85,7 +85,7 @@ public class TestSystem_ForEach : SystemBase
         };
         m_Query_1 = GetEntityQuery(query);
 
-
+*/
         // 
         // ... In a system:
         /*var query_0 = new EntityQueryDesc
