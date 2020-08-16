@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.GridPath", "Samples
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Boids", "Samples.Boids.csproj", "{9A8FA4C2-E6D2-2504-3C55-F732E9B5E19E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsceneWithBuildConfigurations", "SubsceneWithBuildConfigurations.csproj", "{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTest", "AllTest.csproj", "{77C115A2-4337-FAC0-1D4E-30BC074CF7C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsceneWithBuildConfigurations", "SubsceneWithBuildConfigurations.csproj", "{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{8C16BB92-3AAD-7CC4-1442-9C2947CAA971}"
 EndProject
@@ -41,14 +41,14 @@ Global
 		{9A8FA4C2-E6D2-2504-3C55-F732E9B5E19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A8FA4C2-E6D2-2504-3C55-F732E9B5E19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A8FA4C2-E6D2-2504-3C55-F732E9B5E19E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77C115A2-4337-FAC0-1D4E-30BC074CF7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{77C115A2-4337-FAC0-1D4E-30BC074CF7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C115A2-4337-FAC0-1D4E-30BC074CF7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C115A2-4337-FAC0-1D4E-30BC074CF7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7071C55D-FDCC-C17A-7EBA-1DA45A9B259F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C16BB92-3AAD-7CC4-1442-9C2947CAA971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C16BB92-3AAD-7CC4-1442-9C2947CAA971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C16BB92-3AAD-7CC4-1442-9C2947CAA971}.Release|Any CPU.ActiveCfg = Release|Any CPU
