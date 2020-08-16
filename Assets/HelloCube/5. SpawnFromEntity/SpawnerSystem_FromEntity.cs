@@ -55,7 +55,7 @@ public class SpawnerSystem_FromEntity : SystemBase
                 }
             }
 
-            commandBuffer.DestroyEntity(entityInQueryIndex, entity);
+            commandBuffer.DestroyEntity(entityInQueryIndex, entity); 
         }).ScheduleParallel();
 
         // SpawnJob runs in parallel with no sync point until the barrier system executes.
