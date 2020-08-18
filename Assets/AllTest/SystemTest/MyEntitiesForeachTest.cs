@@ -2,6 +2,7 @@
 
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Jobs;
 using UnityEngine;
 
 namespace AllTest.SystemTest
@@ -12,7 +13,7 @@ namespace AllTest.SystemTest
         private EntityQuery query;
         protected override void OnCreate()
         {
-            EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A1), typeof(A2),typeof(A3)), 5, Allocator.Temp);
+            EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A1), typeof(A2), typeof(A3)), 5, Allocator.Temp);
             EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A1), typeof(A2)), 5, Allocator.Temp);
             EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A1), typeof(A3)), 5, Allocator.Temp);
             EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A2), typeof(A3)), 5, Allocator.Temp);
@@ -20,14 +21,14 @@ namespace AllTest.SystemTest
             EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A2)), 5, Allocator.Temp);
             EntityManager.CreateEntity(EntityManager.CreateArchetype(typeof(A3)), 5, Allocator.Temp);
 
-/*          // 实例是用来获取Entities.ForEach()方法及其扩展获得的EntityQuery 所以这里不需要初始化
-            var queryDesc = new EntityQueryDesc
-            {
-                None = new ComponentType[] { typeof(A3) },
-                Any = new ComponentType[] { typeof(A1),typeof(A2) }
-            };
-            query = GetEntityQuery(queryDesc);  // EntityQuery 初始化
-*/
+            /*          // 实例是用来获取Entities.ForEach()方法及其扩展获得的EntityQuery 所以这里不需要初始化
+                        var queryDesc = new EntityQueryDesc
+                        {
+                            None = new ComponentType[] { typeof(A3) },
+                            Any = new ComponentType[] { typeof(A1),typeof(A2) }
+                        };
+                        query = GetEntityQuery(queryDesc);  // EntityQuery 初始化
+            */
 
         }
 
@@ -39,11 +40,11 @@ namespace AllTest.SystemTest
             var job1Handle = Entities
                 .WithName("DefaultEntityQuery")
                 .WithStoreEntityQueryInField(ref query) // 这个是把Entities.Foreach()以及它的扩展方法获得的EntityQuery 传递给query
-                // .WithAny<A1,A3>()
+                                                        // .WithAny<A1,A3>()
                 .ForEach((int entityInQueryIndex
                     //,ref A1 data1
-                    ,ref A2 data2
-                    ,ref A3 data3
+                    , ref A2 data2
+                    , ref A3 data3
                     ) =>
                 {
                     dataSquared[entityInQueryIndex] = entityInQueryIndex;
@@ -69,7 +70,8 @@ namespace AllTest.SystemTest
             })
                 // WithDeallocateOnJobCompletion can only be used on variables that are captured in your Entities.ForEach lambda. 
                 // .WithDeallocateOnJobCompletion(dataSquared) // 工作完成后解除分配    文档中是 .WithDisposeOnCompletion(result)
-                .Schedule(job1Handle);
+                .Schedule(job1Handle); // Job.WithCode 不存在 .ScheduleParallel() 方法
+                
 
             Dependency = dataSquared.Dispose(job2Handle); // dataSquared.Dispose  在 job2Handle 之后执行，并且把依赖返回给整个system对象
 
@@ -86,7 +88,7 @@ namespace AllTest.SystemTest
     }
 
 
-    public struct A1:IComponentData
+    public struct A1 : IComponentData
     {
 
     }

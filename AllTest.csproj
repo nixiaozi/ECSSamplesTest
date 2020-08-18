@@ -70,6 +70,7 @@
     <Compile Include="Assets\AllTest\ComponentTest\MyCommonComponentSystem.cs" />
     <Compile Include="Assets\AllTest\ComponentTest\SharedComponent\MyRenderMesh.cs" />
     <Compile Include="Assets\AllTest\ComponentTest\SharedComponent\MyTestSystemStateComponentSystem.cs" />
+    <Compile Include="Assets\AllTest\SystemTest\JobParallelForTest.cs" />
     <Compile Include="Assets\AllTest\SystemTest\MyEntitiesForeachTest.cs" />
     <None Include="Assets\AllTest\AllTest.asmdef" />
     <Reference Include="UnityEngine">
