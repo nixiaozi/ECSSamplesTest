@@ -24,7 +24,7 @@ public class JobParallelForTest : SystemBase
             var instanceCount = chunk.Count;
 
 
-            if(math.)
+            // if(math.)
 
         }
     }
@@ -33,7 +33,7 @@ public class JobParallelForTest : SystemBase
 
     protected override void OnUpdate()
     {
-        throw new System.NotImplementedException();
+        // throw new System.NotImplementedException();
     }
 }
 
