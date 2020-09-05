@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AllTest\ComponentNestTest\Nest1.cs" />
+    <Compile Include="Assets\AllTest\ComponentNestTest\Nest2.cs" />
+    <Compile Include="Assets\AllTest\ComponentNestTest\NestSystem.cs" />
     <Compile Include="Assets\AllTest\ComponentTest\DynamicBufferComponent\MyBufferElement.cs" />
     <Compile Include="Assets\AllTest\ComponentTest\DynamicBufferComponent\MyCreateEntitiesWithBuffers.cs" />
     <Compile Include="Assets\AllTest\ComponentTest\DynamicBufferComponent\MyDynamicBufferJobSystem.cs" />
